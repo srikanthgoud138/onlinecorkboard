@@ -1,0 +1,61 @@
+<div class="row mt-4">
+  
+    <div class="col-2"></div>
+
+
+
+
+
+    <div class="col-8 jumbotron" style="background-color: aquamarine">
+  
+  
+  
+      <form #refForm="ngForm" (ngSubmit)="onLogin(refForm.value)" >
+  
+        <label for="fname" >Full name:</label>
+        <span class="alert text-danger" *ngIf="refname1.invalid&&refname1.touched" >*Plz enter full name</span>     
+        <i class="fa fa-user icon"></i>
+        <input type="text"  id="fname"    minlength="4"  class="form-control"  
+        name="fname"  [(ngModel)]="fname1"  #refname1="ngModel"  required>
+
+        
+
+
+
+        <label>Username:</label>
+
+        <span class="alert text-danger" *ngIf="refname2.invalid&&refname2.touched" >*Atleast 4 characters</span>     
+        <input type="text" class="form-control" name="uname"  [(ngModel)]="uname1"  #refname2="ngModel" minlength="4" required >
+
+
+        <label>Password:</label>
+
+        <span class="alert text-danger" *ngIf="refname3.invalid&&refname3.touched" >*Enter valid password</span>
+        <input type="password" class="form-control" name="password"  [(ngModel)]="password1"  #refname3="ngModel"  minlength="4" required>
+
+
+        <label>Mobile number:</label>
+
+        <span class="alert text-danger" *ngIf="refname4.invalid&&refname4.touched" >*Enter valid number</span>
+        <input type="number" class="form-control mb-4" name="mobile_number"  [(ngModel)]="mobile_number1"  #refname4="ngModel" minlength="10" required>
+  
+        <button  type="submit" class="btn btn-primary" >Register</button>
+  
+        <button class="btn btn-danger" style="margin-left: 10px" type="reset">Cancel</button><br><br>
+  
+  
+  
+  
+  
+  
+  
+      </form>
+  
+  
+  
+  
+  
+    </div>
+  
+  
+  </div>

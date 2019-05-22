@@ -1,0 +1,12 @@
+
+  .centered {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top-left {
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}

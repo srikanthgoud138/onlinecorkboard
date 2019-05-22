@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-md navbar-dark " style="background-color: rgb(58, 58, 58)">
+  <img src="/assets/logonavbarhome.png" height="60px" href="#">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link  "  routerLink="students">Home </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="margin-left: 800px">Logout</a>
+      </li>
+
+
+
+    </ul>
+
+  </div>
+</nav>
+
+<div class="row  mt-4 container">
+
+  <div class="col-1"></div>
+  <div class="col-2 bg-success ">
+    <br>
+    <br>
+    <br>
+
+    <img src="/assets/login3.jpg" height="120px" width="150px">
+    <br>
+    <br>
+    <a routerLink="updateprofilestudents"> <h3>Update Profile</h3></a>
+    <br>
+    <br>
+    <br> 
+    <a routerLink="notificationsstudents"><h3>Notifications</h3></a>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+  </div>
+  <div class="col-9 bg-warning" >
+
+   
+
+    <router-outlet></router-outlet>
+
+
+  </div>
+  
+
+
+</div>

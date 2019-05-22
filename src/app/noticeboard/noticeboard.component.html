@@ -1,0 +1,14 @@
+
+  <img src="/assets/noticeboard4.gif" alt="Snow" style="width:100%;" height="500px">
+
+  <div class="top-left text-light ">
+
+  </div>
+
+  <div class="centered text-light mt-3">
+    <marquee onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="2" direction="up">
+      <a routerLink="login" *ngFor="let i of datafromnotice">
+        <h4>{{i.name}}</h4>
+      </a>
+    </marquee>
+  </div>

@@ -1,0 +1,36 @@
+<div class="row mt-4 ">
+  <div class="col-2"></div>
+  <div class="col-8  jumbotron" style="background-color: aquamarine">
+
+    <form #refForm="ngForm" (ngSubmit)="onLogin(refForm.value)">
+      <div class="form-group">
+        <label>Username:</label>
+        <span class="alert text-danger" *ngIf="refname1.invalid&&refname1.touched" >*Atleast 4 characters</span>     
+        
+
+        <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter username" 
+        name="uname" [(ngModel)]="uname1" #refname1="ngModel"  minlength="4" required>
+
+       
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password:</label>
+        <span class="alert text-danger" *ngIf="refname2.invalid&&refname2.touched" >*Please enter valid password</span>     
+        
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" 
+        name="password" [(ngModel)]="password1"  #refname2="ngModel" minlength="4"  required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+
+      <button style="margin-left: 10px">Forgot password ?</button>
+
+      <button class="btn btn-primary float-right" (click)="onRegister()">Register</button>
+
+    </form>
+
+
+  </div>
+
+</div>
+
